@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+
+/* ORRERA design tokens: "Brass & Void" */
+@theme {
+  --color-void: #07060b;
+  --color-ink: #0d0b12;
+  --color-panel: #14111b;
+  --color-brass: #d6a95b;
+  --color-brass-soft: #f0d49a;
+  --color-brass-deep: #8f6b30;
+  --color-parchment: #f1e6cc;
+  --color-dust: #a99e88;
+  --color-ember: #e0734a;
+
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Manrope Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-void);
+  color: var(--color-parchment);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgb(214 169 91 / 0.35);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass-soft);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- Atmosphere: stars, glow, grain ---------- */
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(1px 1px at 20px 30px, rgb(241 230 204 / 0.9), transparent),
+    radial-gradient(1px 1px at 140px 80px, rgb(214 169 91 / 0.9), transparent),
+    radial-gradient(1.5px 1.5px at 90px 160px, rgb(255 255 255 / 0.85), transparent),
+    radial-gradient(1px 1px at 200px 120px, rgb(241 230 204 / 0.7), transparent),
+    radial-gradient(1px 1px at 60px 210px, rgb(214 169 91 / 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 260px 40px, rgb(255 255 255 / 0.7), transparent),
+    radial-gradient(1px 1px at 330px 260px, rgb(241 230 204 / 0.8), transparent),
+    radial-gradient(60rem 36rem at 80% -10%, rgb(214 169 91 / 0.1), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 100%, rgb(143 107 48 / 0.12), transparent 60%);
+  background-size:
+    220px 220px,
+    310px 310px,
+    270px 270px,
+    410px 410px,
+    350px 350px,
+    480px 480px,
+    530px 530px,
+    100% 100%,
+    100% 100%;
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.6'/></svg>");
+}
+
+/* ---------- Reusable pieces ---------- */
+.panel {
+  position: relative;
+  border: 1px solid rgb(214 169 91 / 0.22);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgb(28 23 38 / 0.62), rgb(16 13 22 / 0.72));
+  box-shadow:
+    inset 0 1px 0 rgb(240 212 154 / 0.08),
+    0 24px 60px -30px rgb(0 0 0 / 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+.brass-text {
+  background: linear-gradient(110deg, #f6e2b0 0%, #d6a95b 45%, #a47a36 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Italic letters lean past their box, and gradient text is clipped to that box.
+     Extra padding (cancelled by the negative margin) keeps the last letter whole. */
+  padding: 0 0.16em 0.08em 0;
+  margin-right: -0.16em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  color: #1a1206;
+  background: linear-gradient(135deg, #f6e2b0, #d6a95b 55%, #b3873f);
+  box-shadow:
+    0 0 0 1px rgb(240 212 154 / 0.5),
+    0 10px 30px -10px rgb(214 169 91 / 0.55);
+}
+.btn-primary:hover {
+  box-shadow:
+    0 0 0 1px rgb(240 212 154 / 0.8),
+    0 14px 36px -10px rgb(214 169 91 / 0.75);
+}
+.btn-ghost {
+  color: var(--color-parchment);
+  border: 1px solid rgb(214 169 91 / 0.4);
+  background: rgb(214 169 91 / 0.04);
+}
+.btn-ghost:hover {
+  border-color: var(--color-brass-soft);
+  background: rgb(214 169 91 / 0.1);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--color-brass);
+  color: #1a1206;
+  font-weight: 700;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ---------- Motion ---------- */
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.orbit-spin {
+  transform-origin: 300px 300px;
+  animation: orbit-spin linear infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.float-slow {
+  animation: float-slow 9s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+.pulse-glow {
+  animation: pulse-glow 5s ease-in-out infinite;
+}
+
+/* In-app "Reduce motion" setting (Settings page), same effect as the device setting */
+:root[data-motion='reduced'] {
+  scroll-behavior: auto;
+}
+:root[data-motion='reduced'] .orbit-spin,
+:root[data-motion='reduced'] .float-slow,
+:root[data-motion='reduced'] .pulse-glow {
+  animation: none;
+}
+:root[data-motion='reduced'] .btn {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .orbit-spin,
+  .float-slow,
+  .pulse-glow {
+    animation: none;
+  }
+  .btn {
+    transition: none;
+  }
+}

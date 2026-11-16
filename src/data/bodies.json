@@ -1,0 +1,518 @@
+[
+  {
+    "id": "sun",
+    "slug": "sun",
+    "displayName": "Sun",
+    "objectType": "star",
+    "planetType": null,
+    "parentObjectId": null,
+    "orderFromSun": 0,
+    "tagline": "Our star",
+    "description": "The Sun is the star at the centre of our Solar System. It formed about 4.6 billion years ago and its gravity holds every planet, moon and comet in orbit around it.",
+    "atmosphere": "Its outer atmosphere has three main layers: the photosphere, the chromosphere and the corona.",
+    "surface": "No solid surface. The visible 'surface' is the photosphere, a layer of hot, glowing plasma.",
+    "highlights": [
+      "Holds about 99.86% of all the mass in the Solar System.",
+      "Its core reaches about 15 million °C, where hydrogen fuses into helium.",
+      "Sunlight takes about 8 minutes and 20 seconds to reach Earth."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 1391400,
+      "massKg": 1.9884e30,
+      "densityKgM3": 1408,
+      "gravityMs2": 274,
+      "escapeVelocityKms": 617.6,
+      "temperature": {
+        "valueC": 5499,
+        "basis": "effective-surface",
+        "note": "Effective (blackbody) temperature of the visible surface: 5772 K."
+      }
+    },
+    "rotation": {
+      "siderealPeriodHours": 609.12,
+      "solarDayHours": null,
+      "axialTiltDeg": 7.25,
+      "note": "The Sun spins faster at its equator than near its poles. The listed period is the NASA value at 16° latitude; the tilt is relative to the ecliptic."
+    },
+    "orbit": null,
+    "moons": null,
+    "visual": {
+      "visualRadius": 6,
+      "visualOrbitRadius": null,
+      "accent": "#ffb347",
+      "palette": ["#fff1b8", "#f08a1c"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["mercury", "earth", "jupiter"],
+    "notes": [
+      "Diameter shown is the volumetric mean diameter (2 x 695,700 km); the Sun is nearly spherical.",
+      "Values follow the NASA Sun Fact Sheet."
+    ],
+    "sources": [
+      { "title": "NASA Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
+      { "title": "NASA Science: Sun", "url": "https://science.nasa.gov/sun/" }
+    ],
+    "dataAsOf": null,
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "mercury",
+    "slug": "mercury",
+    "displayName": "Mercury",
+    "objectType": "planet",
+    "planetType": "terrestrial",
+    "parentObjectId": "sun",
+    "orderFromSun": 1,
+    "tagline": "Smallest and swiftest",
+    "description": "Mercury is the smallest planet and the closest to the Sun. It is a cratered, airless world where the temperature swings wildly between day and night.",
+    "atmosphere": "Almost none. Mercury has only an extremely thin exosphere made of atoms blasted off its surface.",
+    "surface": "Grey, heavily cratered rock that looks much like our Moon, crossed by long cliffs called scarps.",
+    "highlights": [
+      "The smallest planet in the Solar System.",
+      "Surface temperatures swing from about -180 °C at night to about 430 °C by day.",
+      "One solar day (sunrise to sunrise) lasts about 176 Earth days, twice as long as its 88-day year."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 4879,
+      "massKg": 3.3e23,
+      "densityKgM3": 5429,
+      "gravityMs2": 3.7,
+      "escapeVelocityKms": 4.3,
+      "temperature": { "valueC": 167, "basis": "surface-mean" }
+    },
+    "rotation": {
+      "siderealPeriodHours": 1407.6,
+      "solarDayHours": 4222.6,
+      "axialTiltDeg": 0.034,
+      "note": "The sidereal period is measured against the stars. The solar day is much longer because the planet also moves along its orbit."
+    },
+    "orbit": { "meanDistanceFromSunKm": 57900000, "orbitalPeriodDays": 88.0, "eccentricity": 0.206 },
+    "moons": { "knownCount": 0, "countAsOf": "2025-03-18", "featuredMoons": [] },
+    "visual": {
+      "visualRadius": 0.5,
+      "visualOrbitRadius": 12,
+      "accent": "#b7aea3",
+      "palette": ["#d8d0c6", "#6f665e"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["sun", "venus"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Mercury", "url": "https://science.nasa.gov/mercury/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "venus",
+    "slug": "venus",
+    "displayName": "Venus",
+    "objectType": "planet",
+    "planetType": "terrestrial",
+    "parentObjectId": "sun",
+    "orderFromSun": 2,
+    "tagline": "The scorched twin",
+    "description": "Venus is similar to Earth in size, but a thick, heat-trapping atmosphere makes it the hottest planet in the Solar System.",
+    "atmosphere": "Extremely dense and about 96% carbon dioxide, with clouds of sulfuric acid. Surface pressure is roughly 90 times that of Earth.",
+    "surface": "Volcanic plains and highlands hidden beneath a permanent blanket of cloud.",
+    "highlights": [
+      "The hottest planet, even though Mercury is closer to the Sun.",
+      "One rotation (about 243 Earth days) takes longer than one orbit (about 225 Earth days).",
+      "It spins backwards compared with most planets, so the Sun rises in the west."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 12104,
+      "massKg": 4.87e24,
+      "densityKgM3": 5243,
+      "gravityMs2": 8.9,
+      "escapeVelocityKms": 10.4,
+      "temperature": { "valueC": 464, "basis": "surface-mean" }
+    },
+    "rotation": {
+      "siderealPeriodHours": -5832.5,
+      "solarDayHours": 2802.0,
+      "axialTiltDeg": 177.4,
+      "note": "A negative period means retrograde rotation: Venus spins in the opposite direction to most planets."
+    },
+    "orbit": { "meanDistanceFromSunKm": 108200000, "orbitalPeriodDays": 224.7, "eccentricity": 0.007 },
+    "moons": { "knownCount": 0, "countAsOf": "2025-03-18", "featuredMoons": [] },
+    "visual": {
+      "visualRadius": 0.9,
+      "visualOrbitRadius": 17,
+      "accent": "#e6c07b",
+      "palette": ["#f5dfaa", "#b9823c"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["mercury", "earth"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Venus", "url": "https://science.nasa.gov/venus/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "earth",
+    "slug": "earth",
+    "displayName": "Earth",
+    "objectType": "planet",
+    "planetType": "terrestrial",
+    "parentObjectId": "sun",
+    "orderFromSun": 3,
+    "tagline": "Our pale blue home",
+    "description": "Earth is the third planet from the Sun and the only world known to host life. Liquid water, a protective atmosphere and a steady climate make it unique among the planets we know.",
+    "atmosphere": "Mostly nitrogen (about 78%) and oxygen (about 21%), with a protective ozone layer and weather-making clouds.",
+    "surface": "About 71% of the surface is covered by liquid water. The rest is continents with mountains, deserts, forests and ice.",
+    "highlights": [
+      "The only planet known to host life.",
+      "Its axial tilt of about 23.4° creates the seasons.",
+      "Orbited by one natural satellite, the Moon."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 12756,
+      "massKg": 5.97e24,
+      "densityKgM3": 5514,
+      "gravityMs2": 9.8,
+      "escapeVelocityKms": 11.2,
+      "temperature": { "valueC": 15, "basis": "surface-mean" }
+    },
+    "rotation": {
+      "siderealPeriodHours": 23.9,
+      "solarDayHours": 24.0,
+      "axialTiltDeg": 23.4
+    },
+    "orbit": { "meanDistanceFromSunKm": 149600000, "orbitalPeriodDays": 365.2, "eccentricity": 0.017 },
+    "moons": { "knownCount": 1, "countAsOf": "2025-03-18", "featuredMoons": ["Moon"] },
+    "visual": {
+      "visualRadius": 1,
+      "visualOrbitRadius": 23,
+      "accent": "#4fa3d9",
+      "palette": ["#8fd0f2", "#1d4f86"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["venus", "mars"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Earth", "url": "https://science.nasa.gov/earth/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "mars",
+    "slug": "mars",
+    "displayName": "Mars",
+    "objectType": "planet",
+    "planetType": "terrestrial",
+    "parentObjectId": "sun",
+    "orderFromSun": 4,
+    "tagline": "The red planet",
+    "description": "Mars is a cold, dusty desert world with a thin atmosphere. Its rusty surface is marked by giant volcanoes, deep canyons and ancient channels.",
+    "atmosphere": "Thin and mostly carbon dioxide (about 95%). Surface pressure is less than 1% of Earth's.",
+    "surface": "A cold desert of iron-rich dust and rock, home to the tallest volcano and one of the largest canyons known in the Solar System.",
+    "highlights": [
+      "Home to Olympus Mons, the tallest known volcano in the Solar System.",
+      "Its red colour comes from iron oxide (rust) in the dust and rocks.",
+      "A Martian day is only about 40 minutes longer than an Earth day."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 6792,
+      "massKg": 6.42e23,
+      "densityKgM3": 3934,
+      "gravityMs2": 3.7,
+      "escapeVelocityKms": 5.0,
+      "temperature": { "valueC": -65, "basis": "surface-mean" }
+    },
+    "rotation": {
+      "siderealPeriodHours": 24.6,
+      "solarDayHours": 24.7,
+      "axialTiltDeg": 25.2
+    },
+    "orbit": { "meanDistanceFromSunKm": 228000000, "orbitalPeriodDays": 687.0, "eccentricity": 0.094 },
+    "moons": { "knownCount": 2, "countAsOf": "2025-03-18", "featuredMoons": ["Phobos", "Deimos"] },
+    "visual": {
+      "visualRadius": 0.7,
+      "visualOrbitRadius": 29,
+      "accent": "#d2623a",
+      "palette": ["#e8825a", "#8b3320"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["earth", "jupiter"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Mars", "url": "https://science.nasa.gov/mars/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "jupiter",
+    "slug": "jupiter",
+    "displayName": "Jupiter",
+    "objectType": "planet",
+    "planetType": "gas-giant",
+    "parentObjectId": "sun",
+    "orderFromSun": 5,
+    "tagline": "King of the planets",
+    "description": "Jupiter is the largest planet, a gas giant with swirling cloud bands, powerful storms and a large family of moons.",
+    "atmosphere": "Mostly hydrogen and helium, arranged in colourful cloud bands with enormous storms.",
+    "surface": "No solid surface. Pressure and temperature rise steadily with depth, so scientists use the 1-bar level as a reference.",
+    "highlights": [
+      "More than twice as massive as all the other planets combined.",
+      "The Great Red Spot is a storm wider than Earth that has been observed for well over a century.",
+      "It spins faster than any other planet, rotating once in under 10 hours."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 142984,
+      "massKg": 1.898e27,
+      "densityKgM3": 1326,
+      "gravityMs2": 23.1,
+      "escapeVelocityKms": 59.5,
+      "temperature": {
+        "valueC": -110,
+        "basis": "one-bar-level",
+        "note": "Measured at the 1-bar pressure level because there is no solid surface."
+      }
+    },
+    "rotation": {
+      "siderealPeriodHours": 9.9,
+      "solarDayHours": 9.9,
+      "axialTiltDeg": 3.1
+    },
+    "orbit": { "meanDistanceFromSunKm": 778500000, "orbitalPeriodDays": 4331, "eccentricity": 0.049 },
+    "moons": {
+      "knownCount": 95,
+      "countAsOf": "2025-03-18",
+      "featuredMoons": ["Io", "Europa", "Ganymede", "Callisto"]
+    },
+    "visual": {
+      "visualRadius": 2.6,
+      "visualOrbitRadius": 42,
+      "accent": "#d9a46b",
+      "palette": ["#f0cfa0", "#9a6238"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["mars", "saturn"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter.",
+      "Gas and ice giants have no solid surface; temperature and gravity refer to the 1-bar pressure level.",
+      "Moon counts change as new moons are confirmed."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Jupiter", "url": "https://science.nasa.gov/jupiter/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "saturn",
+    "slug": "saturn",
+    "displayName": "Saturn",
+    "objectType": "planet",
+    "planetType": "gas-giant",
+    "parentObjectId": "sun",
+    "orderFromSun": 6,
+    "tagline": "Lord of the rings",
+    "description": "Saturn is a gas giant best known for its bright, wide system of rings. It is the least dense planet in the Solar System.",
+    "atmosphere": "Mostly hydrogen and helium, with pale cloud bands and a hexagon-shaped jet stream around its north pole.",
+    "surface": "No solid surface. Its rings are made mostly of water-ice particles, from dust grains to house-sized chunks.",
+    "highlights": [
+      "The least dense planet: its average density is lower than that of water.",
+      "Its rings span hundreds of thousands of kilometres but are extremely thin.",
+      "Has the most known moons of any planet (274 as of March 2025)."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 120536,
+      "massKg": 5.68e26,
+      "densityKgM3": 687,
+      "gravityMs2": 9.0,
+      "escapeVelocityKms": 35.5,
+      "temperature": {
+        "valueC": -140,
+        "basis": "one-bar-level",
+        "note": "Measured at the 1-bar pressure level because there is no solid surface."
+      }
+    },
+    "rotation": {
+      "siderealPeriodHours": 10.7,
+      "solarDayHours": 10.7,
+      "axialTiltDeg": 26.7
+    },
+    "orbit": { "meanDistanceFromSunKm": 1432000000, "orbitalPeriodDays": 10747, "eccentricity": 0.052 },
+    "moons": {
+      "knownCount": 274,
+      "countAsOf": "2025-03-18",
+      "featuredMoons": ["Titan", "Enceladus", "Rhea", "Iapetus"]
+    },
+    "visual": {
+      "visualRadius": 2.2,
+      "visualOrbitRadius": 58,
+      "accent": "#e3cc8f",
+      "palette": ["#f3e2b0", "#a98a4d"],
+      "hasRings": true,
+      "texture": null
+    },
+    "relatedObjectIds": ["jupiter", "uranus"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter and does not include the rings.",
+      "Gas and ice giants have no solid surface; temperature and gravity refer to the 1-bar pressure level.",
+      "Moon counts change as new moons are confirmed."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Saturn", "url": "https://science.nasa.gov/saturn/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "uranus",
+    "slug": "uranus",
+    "displayName": "Uranus",
+    "objectType": "planet",
+    "planetType": "ice-giant",
+    "parentObjectId": "sun",
+    "orderFromSun": 7,
+    "tagline": "The sideways ice giant",
+    "description": "Uranus is an ice giant that rolls around the Sun tipped on its side. Methane in its atmosphere gives it a pale blue-green colour.",
+    "atmosphere": "Hydrogen and helium with a little methane, which absorbs red light and gives Uranus its blue-green colour.",
+    "surface": "No solid surface. Most of its mass is a hot, dense fluid of water, methane and ammonia 'ices' above a small rocky core.",
+    "highlights": [
+      "It rotates on its side, tilted about 98° to its orbit.",
+      "It has the coldest planetary atmosphere measured, dropping to about -224 °C.",
+      "Its 28 known moons (as of March 2025) are named mostly after characters from Shakespeare and Alexander Pope."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 51118,
+      "massKg": 8.68e25,
+      "densityKgM3": 1270,
+      "gravityMs2": 8.7,
+      "escapeVelocityKms": 21.3,
+      "temperature": {
+        "valueC": -195,
+        "basis": "one-bar-level",
+        "note": "Measured at the 1-bar pressure level because there is no solid surface."
+      }
+    },
+    "rotation": {
+      "siderealPeriodHours": -17.2,
+      "solarDayHours": 17.2,
+      "axialTiltDeg": 97.8,
+      "note": "A negative period means retrograde rotation. The extreme axial tilt makes Uranus roll along its orbit."
+    },
+    "orbit": { "meanDistanceFromSunKm": 2867000000, "orbitalPeriodDays": 30589, "eccentricity": 0.047 },
+    "moons": {
+      "knownCount": 28,
+      "countAsOf": "2025-03-18",
+      "featuredMoons": ["Titania", "Oberon", "Ariel", "Umbriel", "Miranda"]
+    },
+    "visual": {
+      "visualRadius": 1.6,
+      "visualOrbitRadius": 72,
+      "accent": "#7fd6d6",
+      "palette": ["#b4f0ee", "#3b93a1"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["saturn", "neptune"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter.",
+      "Gas and ice giants have no solid surface; temperature and gravity refer to the 1-bar pressure level.",
+      "Moon counts change as new moons are confirmed."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Uranus", "url": "https://science.nasa.gov/uranus/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  },
+  {
+    "id": "neptune",
+    "slug": "neptune",
+    "displayName": "Neptune",
+    "objectType": "planet",
+    "planetType": "ice-giant",
+    "parentObjectId": "sun",
+    "orderFromSun": 8,
+    "tagline": "The distant blue giant",
+    "description": "Neptune is the most distant planet from the Sun. This dark, cold ice giant is whipped by supersonic winds.",
+    "atmosphere": "Hydrogen, helium and methane. Methane gives it a deep blue colour, and bright high clouds streak across it.",
+    "surface": "No solid surface. Like Uranus, it has a hot, dense fluid interior above a small rocky core.",
+    "highlights": [
+      "The only planet in the Solar System that cannot be seen with the naked eye.",
+      "Winds can exceed 1,200 mph (about 1,900 km/h), the fastest measured on any planet.",
+      "One Neptune year lasts about 165 Earth years; it completed its first orbit since its 1846 discovery in 2011."
+    ],
+    "physical": {
+      "equatorialDiameterKm": 49528,
+      "massKg": 1.02e26,
+      "densityKgM3": 1638,
+      "gravityMs2": 11.0,
+      "escapeVelocityKms": 23.5,
+      "temperature": {
+        "valueC": -200,
+        "basis": "one-bar-level",
+        "note": "Measured at the 1-bar pressure level because there is no solid surface."
+      }
+    },
+    "rotation": {
+      "siderealPeriodHours": 16.1,
+      "solarDayHours": 16.1,
+      "axialTiltDeg": 28.3
+    },
+    "orbit": { "meanDistanceFromSunKm": 4515000000, "orbitalPeriodDays": 59800, "eccentricity": 0.01 },
+    "moons": {
+      "knownCount": 16,
+      "countAsOf": "2025-03-18",
+      "featuredMoons": ["Triton"]
+    },
+    "visual": {
+      "visualRadius": 1.55,
+      "visualOrbitRadius": 85,
+      "accent": "#4f6fe0",
+      "palette": ["#7f9cff", "#23369b"],
+      "hasRings": false,
+      "texture": null
+    },
+    "relatedObjectIds": ["uranus", "sun"],
+    "notes": [
+      "Values follow the NASA Planetary Fact Sheet (metric), last updated 18 March 2025.",
+      "Diameter is the equatorial diameter.",
+      "Gas and ice giants have no solid surface; temperature and gravity refer to the 1-bar pressure level.",
+      "Moon counts change as new moons are confirmed."
+    ],
+    "sources": [
+      { "title": "NASA Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "title": "NASA Science: Neptune", "url": "https://science.nasa.gov/neptune/" }
+    ],
+    "dataAsOf": "2025-03-18",
+    "lastReviewed": "2026-11-12"
+  }
+]
